@@ -34,6 +34,7 @@ function Row({title, fetchURL, islargeRow}){
                     />
                 ))}
             </div>
+            
         </div>
     )
 }

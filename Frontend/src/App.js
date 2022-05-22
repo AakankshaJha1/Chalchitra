@@ -8,16 +8,18 @@ function App() {
   return (
     <div className="App">
       {/* Navbar */}
+      
+      
       {/* Banner */}
-
-      {/* Movie Classfication */}
       <Banner/>
+      {/* Movie Classfication */}
+     
       <Row 
-        title ="NETFLIX ORIGINALS" 
+        title ="TRENDING NOW" 
         fetchURL={requests.fetchNetflixOriginals}
         islargeRow
       />
-      <Row title ="Trending Now" fetchURL={requests.fetchTrending}/>
+      <Row title ="Must watch" fetchURL={requests.fetchTrending}/>
       <Row title ="Top Rates" fetchURL={requests.fetchTopRated}/>
       <h2>Categories</h2>
       <Row title ="Action Movies" fetchURL={requests.fetchActionMovies}/>
