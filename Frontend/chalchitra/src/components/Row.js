@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axios from './axios';
-import "./Row.css";
+import axios from "./axios.js";
+import "../styles/Row.css";
 
 const base_url="https://image.tmdb.org/t/p/original/"; //this is the base url for movie posters
 
 function Row({title, fetchURL, islargeRow}){
     const [movies, setMovies]= useState([]);
-    
+
     useEffect(() => {
         async function fetchData(){
             const request = await axios.get(fetchURL);
@@ -16,7 +16,7 @@ function Row({title, fetchURL, islargeRow}){
         fetchData();
     },[fetchURL]);
 
-    console.table(movies);
+    
 
     return (
         <div className="row">
@@ -28,13 +28,13 @@ function Row({title, fetchURL, islargeRow}){
                     key={movie.id}
                     className={`row_poster ${islargeRow && "row_posterLarge"}`}
                     src= {`${base_url}${
-                        islargeRow ? movie.poster_path : movie.backdrop_path
+                        movie.poster_path
+                        // islargeRow ? movie.poster_path : movie.backdrop_path
                     }`} 
                     alt={movie.name} 
                     />
                 ))}
             </div>
-            
         </div>
     )
 }
