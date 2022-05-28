@@ -1,9 +1,9 @@
 {
-  "short_name": "KVG Movie Zone",
-  "name": "KVG Movie Zone",
+  "short_name": "Chalchitra",
+  "name": "Chalchitra",
   "icons": [
     {
-      "src": "assets/kvg_mrs_logo.png",
+      "src": "assets/logo.png",
       "type": "image/png",
       "sizes": "500x500"
     }
