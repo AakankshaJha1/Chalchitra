@@ -7,6 +7,7 @@
 ### Table of Content
 - Project Overview
   - [About the project](https://github.com/AakankshaJha1/Chalchitra/new/main?readme=1#about-the-project)
+  - [Algorithm Used](https://github.com/AakankshaJha1/Chalchitra/edit/main/README.md#algorithms-used)
   - [Salient Features](https://github.com/AakankshaJha1/Chalchitra/new/main?readme=1#salient-features)
   - [Compatible Platforms](https://github.com/AakankshaJha1/Chalchitra/new/main?readme=1#compatible-platforms)
 - Getting Started
@@ -25,6 +26,17 @@ Chalchitra uses Content Based Movie Recommendation to recommend movies to the us
 Deployed Web Application Link: https://chalchitra.vercel.app/ <br>
 Deployed Flask API Link:https://chalchitraa.herokuapp.com/ 
 </p>
+
+## Algorithms Used
+- Content Based Filtering
+
+Content-based filtering classify products with specific keywords and uses item features to recommend other items similar to what the user likes, based on their previous actions or explicit feedback.It is hugely dependent on the inputs provided by users, some common examples included Google, Wikipedia, etc. For example, when a user searches for a group of keywords, then Google displays all the items consisting of those keywords.
+
+-  Cosine Similarity
+
+Our recommendation model utilizes all movies' properties and the metadata to calculate and find the most similar movie to the user input. We use the cosine function to compute the similarity score between movies, where each movie will have a similarity score with every other movie in our dataset.
+
+
 
 ## Salient Features
 
